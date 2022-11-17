@@ -1,0 +1,91 @@
+
+header {
+
+    height: 15vh;
+   
+       
+    
+    #mobheader {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        // @media(min-width:768px){
+        //         display: none;
+        //     }
+       
+        
+                /* Style the navigation menu */
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+
+            #myLinks a {
+                font-family: $raleway;    
+            }
+
+            div {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+                img {
+                    width: 5em;
+                    height: 2.6em;
+                }
+                h1 {
+                    font-family: $raleway;
+                    font-weight: 900;
+                }
+                #sign {
+                    background-color: $primcolor;
+                    font-family: 'Raleway';
+                    font-weight: 800;
+                    color: white;
+                    padding-inline: 0.813em;
+                    padding-block: 0.375em;
+                    margin-left: 2.375em;
+                } 
+            }
+            
+        }
+        
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        .topnav #myLinks {
+            display: none;
+        }
+        
+        /* Style navigation menu links */
+        .topnav a {
+            color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+        
+        /* Style the hamburger menu */
+        .topnav a.icon {
+            display: block;
+            position: absolute;
+            top: 35px;
+        }
+        
+        /* Add a grey background color on mouse-over */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        /* Style the active link (or home/logo) */
+        .active {
+            
+        }
+    }
+}

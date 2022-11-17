@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS-->
-    <link rel="stylesheet" href="design/style.scss">
+    <link rel="stylesheet" href="design/style.css">
 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@800;900&display=swap" rel="stylesheet">
+
+    <!--hambourger menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>NinjaMail</title>
     
@@ -20,12 +23,29 @@
 
     <!-- Début du Header -->
     <header>
-        <section>
-            <div>
-                <img src="assets/mail.png" alt="une icone mail enveloppe">
-                <h1>NinjaMail</h1>
+        <section id="mobheader">
+                        <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <div>
+                    <img src="assets/mail.png" alt="">
+                    <h1>NinjaMail</h1> 
+                    <a id="sign" href="">SIGN UP FREE</a>
+                </div>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="#news">FEATURES</a>
+                    <a href="#contact">PRICING</a>
+                    <a href="#about">SERVICES</a>
+                    <a href="#about">PARTNERS</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
             </div>
-            <nav></nav>
+                                <!--Sign up-->
+           
+            
         </section>
     </header>
     <!-- Fin du header -->
@@ -167,6 +187,18 @@
     </footer>
     
 
+    <script> 
+                /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
 
+            
+    </script>
 </body>
 </html> 
