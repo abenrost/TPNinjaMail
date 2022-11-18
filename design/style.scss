@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixin';
 @import 'header';
+@import 'footer';
 
 body {
 
@@ -65,8 +66,10 @@ body {
             margin: auto;
             background-image: url("../assets/video.png");
             background-repeat: no-repeat;
-            text-align: center;
+            background-size: cover;
+            background-position: center center;
             display: flex;
+            text-align: center;
             
 
             div {
@@ -86,59 +89,232 @@ body {
     } 
 
     #page2 {
-        height: 70vh;
+        height: 100vh;
 
         #blocp2 {
             width: 80%;
+            height: 60%;
             margin: auto;
             display: flex;
             justify-content: space-between;
-
-            div, article {
+           
+            #sblocp21 {
                 width: 30%; 
-                p {
-                font-family: $raleway;
-                line-height: 1.625em;
-                font-weight: 500;
-                }
-            }
+                height: 100%;
+                position: relative;
 
-            div {
-                
-
-               
-
-                a {
-                    text-decoration: none;
-                    color: $primcolor;
-                    font-family: $raleway;
-                    font-weight: 800;
+                #imgp21 { 
+                    img {
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 100%;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 15px 0px;
+                    }
                 }
 
                 #carte1 {
-                    width: 80%;
-                    height: 50%;
-                    background-color: gray;
-                  
+                    position: absolute;
+                    bottom: -20px;
+                    background-color: white;
+                    height: 45%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    div {
+                        width: 90%;
+                        margin: auto;
+                        a {
+                            text-decoration: none;
+                            color: $primcolor;
+                            font-family: $raleway;
+                            font-weight: 800;
+                            font-size: 1.2em;
+                        }
+                        p {
+                            font-family: $raleway;
+                            font-size: 1.4em;
+                            line-height: 1.625em;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            #sblocp22 {
+
+                width: 30%; 
+                height: 100%;
+                position: relative;
+
+                #imgp22 {
+                    width: 100%;
+                    img {
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 100%;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 15px 0px;
+                    }
                 }
 
                 #carte2 {
-                    width: 80%;
-                    background-color: gray;
+                    position: absolute;
+                    bottom:-20px;
+                    background-color: white;
+                    height: 45%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    div {
+                        width: 90%;
+                        margin: auto;
+                        a {
+                            text-decoration: none;
+                            color: $primcolor;
+                            font-family: $raleway;
+                            font-weight: 800;
+                            font-size: 1.2em;
+                        }
+                        p {
+                            font-family: $raleway;
+                            font-size: 1.4em;
+                            line-height: 1.625em;
+                            font-weight: 500;
+                        }
+                    }
+                    
                 }
             }
 
             article {
-
                 h2 {
                     @include h2m;
                     line-height: 48px;
                 }
-
-                p{
-                    
-                    font-size: 1.188em;
+                width: 30%; 
+                p {
+                font-family: $raleway;
+                font-size: 1.8em;
+                line-height: 1.625em;
+                font-weight: 500;               
                 }
+                
+            }
+
+        }
+    }
+
+    #page3 {
+        height: 120vh;
+
+        #blocp3 {
+            width: 80%;
+            height: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            #sblocimg {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 45%;
+
+                div {
+                    width: 30%;
+                    img {
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+
+            #sblocp31 {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    @include h2m;
+                    text-align: center;
+                }
+
+                div {
+
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    input {
+                        width: 60%;
+                        vertical-align: middle;
+                        margin: 0px 16px 0px 0;
+                        padding: 20px;
+                        background-color: #fff;
+                        border: 0.5px solid #ddd;
+                        border-radius: 5px;
+                        font-size: 1.8em;
+                    }
+                    button { 
+                        @include bouton ($primcolor, white);
+                        border: none;
+                        // padding: 10px 20px;
+                        // background-color: $primcolor;
+                        // border: 1px solid #ddd;
+                        // color: white;
+                    }
+                }
+
+                span {
+                    color: $primcolor;
+                    font-size: 1.6em;
+                    font-family: $raleway; 
+                    margin-top: 20px;
+                    margin-left: 30px;
+                }
+            }
+
+            #sblocp32 {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                
+                h2 {
+                    @include h2m;
+                    text-align: center;
+                    margin-bottom: 60px;
+                }
+
+                #sbloclogos {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    #page4 {
+        height: 45vh;
+        background-color: $primcolor;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        div {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                @include h2xl;
+                margin-top: 0;
+            }
+
+            a {
+                @include bouton (white, $primcolor);
+                width: 30%;
+                margin: auto;
             }
         }
     }

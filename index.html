@@ -11,7 +11,7 @@
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;700;800;900&display=swap" rel="stylesheet">
 
     <!--hambourger menu-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -87,6 +87,7 @@
     <!-- Début Page1 -->
     <section id="page1">
         <div id="blocp1"> <!--Cont principal p-->
+            
             <div>
                 <h2>Raech More Customers</h2>
                 <a href="">LEARN HOW</a>
@@ -98,18 +99,26 @@
     <!-- Début page2 -->
     <section id="page2">
         <div id="blocp2"> <!--Cont principal p2-->
-            <div>
-                <img src="assets/phonewoman.png" alt="Une femme utilisant son smartphone">
+            <div id="sblocp21"> <!--soubloc 1-->
+                <div id="imgp21">
+                    <img src="assets/phonewoman.png" alt="">
+                </div>
                 <div id="carte1">
-                    <p>Launch campaigns but also find new customers. Our unique platform handles campaigns from start to end</p>
-                    <a href="">Learn More &gt;</a>
+                    <div>
+                        <p>Launch campaigns but also find new customers. Our unique platform handles campaigns from start to end</p>
+                        <a href="">Learn More &gt;</a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <img src="assets/office.png" alt="trois personnes qui travaillent dans un bureau">
+            <div id="sblocp22">
+                <div id="imgp22">
+                    <img src="assets/office.png" alt="trois personnes qui travaillent dans un bureau">
+                </div>
                 <div id="carte2">
-                    <p>Start building and sharing with your team today. NinjaMail is renowned for its industry leading team collaboration tools.</p>
-                    <a href="">Learn More &gt;</a>
+                    <div>
+                        <p>Start building and sharing with your team today. NinjaMail is renowned for its industry leading team collaboration tools.</p>
+                        <a href="">Learn More &gt;</a>
+                    </div>
                 </div>
             </div>
             <article>
@@ -121,9 +130,9 @@
     <!-- Fin page2 -->
 
     <!-- Début page3 -->
-    <section>
-        <div> <!--Cont Principal p3-->
-            <div> <!--bloc des trois images -->
+    <section id="page3">
+        <div id="blocp3"> <!--Cont Principal p3-->
+            <div id="sblocimg"> <!--bloc des trois images -->
                 <div>
                     <img src="assets/frankie.png" alt="photo d'un membre">
                 </div>
@@ -134,18 +143,22 @@
                     <img src="assets/elayne.png" alt="photo d'une membre">
                 </div>
             </div>
-            <div> <!--bloc milieu avec box mail-->
+            <div id="sblocp31"> <!--bloc milieu avec box mail-->
                 <h2>Learn how others are reaching their audience easier than even before.</h2>
-                <div></div>
+                <div >
+                    <input type="email" id="email" placeholder="Enter your email" name="email">
+                    <button type="submit">JOIN OUR LIST</button>
+                </div>
+                <span>Thanks! Email received</span>
             </div>
-            <div> <!--bloc bas-->
-                <h2>All the best brands already use us.</h2>
-                <div> <!--sous-bloc marques-->
-                    <img src="assets/lastknight.png" alt="logo last knight paris">
-                    <img src="assets/dragon.png" alt="logo dragon eye">
-                    <img src="assets/quest.png" alt="logo quest ai">
-                    <img src="assets/radio.png" alt="logo radio tee">
-                    <img src="assets/game.png" alt="logo gamecommerce">
+            <div id="sblocp32"> <!--bloc bas-->
+                <h2>All the best brands<br>already use us.</h2>
+                <div id="sbloclogos"> <!--sous-bloc marques-->
+                    <div><img src="assets/lastknight.png" alt="logo last knight paris"></div>
+                    <div><img src="assets/dragon.png" alt="logo dragon eye"></div>
+                    <div><img src="assets/quest.png" alt="logo quest ai"></div>
+                    <div><img src="assets/radio.png" alt="logo radio tee"></div>
+                    <div><img src="assets/game.png" alt="logo gamecommerce"></div>
                 </div>
             </div>
         </div>
@@ -154,20 +167,22 @@
     <!-- Fin page3 -->
 
     <!--page 4-->
-    <section>
-        <h2>Get started today!</h2>
-        <a href="">PICK A PLAN</a>
+    <section id="page4">
+        <div>
+            <h2>Get started today!</h2>
+            <a href="">PICK A PLAN</a>
+        </div>
     </section>
     <!--fin page4-->
 
     <footer>
-        <div> <!--Cont principal-->
-            <div> <!--haut-->
-                <div> <!--logo ninjamail-->
+        <div id="blocf"> <!--Cont principal-->
+            <div id="sblocf1"> <!--haut-->
+                <div id="logo"> <!--logo ninjamail-->
                     <img src="assets/mail.png" alt="logo enveloppe">
                     <span>NinjaMail</span>
                 </div>
-                <div> <!--listes de liens-->
+                <div id="linklist"> <!--listes de liens-->
                     <ul>
                         <li><a href="">Features</a></li>
                         <li><a href="">Pricing</a></li>

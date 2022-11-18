@@ -12,12 +12,12 @@
 @mixin h2xl ($c: white) {
     color: $c;
     font-family: $play;
-    font-size: 3.75em;
+    font-size: 4em;
     font-weight: 900;
 }
 
 @mixin h2m {
     font-family: $play;
-    font-size: 2.75em;
+    font-size: 3em;
     font-weight: 900;
 }

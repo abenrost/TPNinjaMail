@@ -1,0 +1,59 @@
+
+footer {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #blocf {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+
+        #sblocf1 {
+            display: flex;
+            width: 100%;
+            height: 75%;
+            justify-content: space-between;
+
+            #logo {
+                display: flex;
+                align-items:center;
+                align-self: baseline;
+                width: 40%;
+
+                span {
+                    font-size: 1.875em;
+                    font-family: $raleway;
+                    font-weight: 900;
+                }
+           }
+
+           #linklist {
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 10px;
+                    a {
+                        text-decoration: none;
+                        font-family: $raleway;
+                        font-weight: 700;
+                        font-size: 1.4em;
+                        color: black;
+                    }
+                }
+            }
+            }
+
+        }
+    }
+
+    
+}
