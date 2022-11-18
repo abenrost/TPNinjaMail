@@ -1,3 +1,23 @@
-@mixin bouton ($bg: $primcolor) {
+@mixin bouton ($bg , $color) {
     background-color: $bg;
+    font-size: 21px;
+    font-family: $raleway;
+    font-weight: 900;
+    padding-inline: 47px;
+    padding-block: 20px;
+    text-decoration: none;
+    color: $color;
+}
+
+@mixin h2xl ($c: white) {
+    color: $c;
+    font-family: $play;
+    font-size: 3.75em;
+    font-weight: 900;
+}
+
+@mixin h2m {
+    font-family: $play;
+    font-size: 2.75em;
+    font-weight: 900;
 }

@@ -11,7 +11,7 @@
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;800;900&display=swap" rel="stylesheet">
 
     <!--hambourger menu-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,6 +23,7 @@
 
     <!-- Début du Header -->
     <header>
+            <!--section version mobile max 767-->
         <section id="mobheader">
                         <!-- Top Navigation Menu -->
             <div class="topnav">
@@ -42,23 +43,38 @@
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
                 </a>
-            </div>
-                                <!--Sign up-->
-           
-            
+            </div>   
         </section>
+            
+        <section id="lheader">
+            <div>
+                <img src="assets/mail.png" alt="">
+                <h1>NinjaMail</h1> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">FEATURES</a></li>
+                    <li><a href="">PRICING</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">PARTNERS</a></li>
+                </ul>
+                <a class="btn" href="">SIGN UP FREE</a>
+            </nav>
+        </section>
+
+
     </header>
     <!-- Fin du header -->
 
     <!-- Début hero -->
     <section id="hero">
-        <div> <!--Cont Principal hero-->
+        <div id="blochero"> <!--Cont Principal hero-->
             <article> 
                 <h2>Create Stunning Email Campaigns</h2>
                 <p>Create and launch email campaigns that captivate your customers in just a few clicks</p>
                 <div>
-                    <a href="">TRY NOW</a>
-                    <a href="">GET A DEMO</a>
+                    <a id="trynow" href="">TRY NOW</a>
+                    <a id="getademo" href="">GET A DEMO</a>
                 </div>
             </article>
             <div> <!--image de laptop woman-->
@@ -69,29 +85,31 @@
     <!-- Fin hero -->
 
     <!-- Début Page1 -->
-    <section>
-        <div> <!--Cont principal p-->
-            <h2>Raech More Customers</h2>
-            <a href="">LEARN HOW</a>
+    <section id="page1">
+        <div id="blocp1"> <!--Cont principal p-->
+            <div>
+                <h2>Raech More Customers</h2>
+                <a href="">LEARN HOW</a>
+            </div>
         </div>
     </section>
     <!-- Fin page1 -->
 
     <!-- Début page2 -->
-    <section>
-        <div> <!--Cont principal p2-->
+    <section id="page2">
+        <div id="blocp2"> <!--Cont principal p2-->
             <div>
                 <img src="assets/phonewoman.png" alt="Une femme utilisant son smartphone">
-                <div>
+                <div id="carte1">
                     <p>Launch campaigns but also find new customers. Our unique platform handles campaigns from start to end</p>
-                    <a href="">Learn More</a>
+                    <a href="">Learn More &gt;</a>
                 </div>
             </div>
             <div>
                 <img src="assets/office.png" alt="trois personnes qui travaillent dans un bureau">
-                <div>
+                <div id="carte2">
                     <p>Start building and sharing with your team today. NinjaMail is renowned for its industry leading team collaboration tools.</p>
-                    <a href="">Learn More</a>
+                    <a href="">Learn More &gt;</a>
                 </div>
             </div>
             <article>
