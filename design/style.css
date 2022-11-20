@@ -79,9 +79,14 @@ header #lheader {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   header #lheader {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header #lheader {
+    width: 100%;
   }
 }
 header #lheader div {
@@ -92,7 +97,12 @@ header #lheader div {
 header #lheader div h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  font-size: 2.188em;
+  font-size: 2.6em;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header #lheader div h1 {
+    font-size: 1.5em;
+  }
 }
 header #lheader div img {
   width: 8.063em;
@@ -104,20 +114,40 @@ header #lheader nav {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header #lheader nav {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header #lheader nav {
+    justify-content: unset;
+  }
+}
 header #lheader nav ul {
   width: 65%;
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header #lheader nav ul {
+    justify-content: space-around;
+  }
+}
 header #lheader nav ul a {
   text-decoration: none;
   color: black;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 1.063em;
+  font-size: 1em;
   letter-spacing: 1.27px;
   position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header #lheader nav ul a {
+    font-size: 0.75em;
+  }
 }
 header #lheader nav ul a::before {
   content: "";
@@ -143,6 +173,12 @@ header #lheader nav .btn {
   padding-inline: 20px;
   padding-block: 11px;
   letter-spacing: 1.27px;
+  white-space: nowrap;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header #lheader nav .btn {
+    font-size: 0.75em;
+  }
 }
 
 footer {
@@ -194,7 +230,7 @@ footer #blocf #sblocf1 #linklist ul li a {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: black;
 }
 footer #blocf #sblocf2 {
@@ -226,56 +262,134 @@ body #hero #blochero {
   margin: auto;
   justify-content: flex-end;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #hero #blochero {
+    width: 90%;
+  }
+}
 body #hero #blochero article {
   position: absolute;
-  top: 10%;
+  top: 16%;
   right: 51%;
   width: 35%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #hero #blochero article {
+    width: 40%;
+    top: 12%;
+    right: 55%;
+  }
 }
 body #hero #blochero article h2 {
   color: black;
   font-family: "Playfair Display", serif;
-  font-size: 4em;
+  font-size: 3.8em;
   font-weight: 900;
   margin-block: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #hero #blochero article h2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #hero #blochero article h2 {
+    font-size: 3em;
+  }
+}
 body #hero #blochero article p {
   font-family: "Raleway", sans-serif;
+  font-size: 1.4em;
+  line-height: 1.625em;
   font-weight: 500;
-  font-size: 19px;
-  width: 70%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #hero #blochero article p {
+    font-size: 1em;
+  }
 }
 body #hero #blochero article div {
   margin-top: 50px;
   display: flex;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #hero #blochero article div {
+    margin-top: 40px;
+  }
 }
 body #hero #blochero article div #trynow {
   background-color: #4BA87D;
   font-size: 21px;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  padding-inline: 47px;
+  padding-inline: 55px;
   padding-block: 20px;
   text-decoration: none;
   color: white;
+  white-space: nowrap;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #hero #blochero article div #trynow {
+    font-size: 1em;
+    padding-block: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #hero #blochero article div #trynow {
+    padding-inline: 35px;
+  }
 }
 body #hero #blochero article div #getademo {
   background-color: white;
   font-size: 21px;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  padding-inline: 47px;
+  padding-inline: 40px;
   padding-block: 20px;
   text-decoration: none;
   color: #4BA87D;
+  white-space: nowrap;
   margin-left: 45px;
   box-shadow: inset 0 0 0 3px #4BA87D;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #hero #blochero article div #getademo {
+    font-size: 1em;
+    padding-block: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #hero #blochero article div #getademo {
+    padding-inline: 28px;
+    margin-left: 35px;
+  }
+}
+body #hero #blochero div {
+  width: 70%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #hero #blochero div {
+    width: 68%;
+  }
+}
 body #hero #blochero div img {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 body #page1 {
-  height: 70vh;
+  height: 90vh;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page1 {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page1 {
+    height: 70vh;
+  }
 }
 body #page1 #blocp1 {
   height: 80%;
@@ -288,6 +402,16 @@ body #page1 #blocp1 {
   display: flex;
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page1 #blocp1 {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page1 #blocp1 {
+    width: 80%;
+  }
+}
 body #page1 #blocp1 div {
   align-self: center;
   margin: auto;
@@ -295,21 +419,45 @@ body #page1 #blocp1 div {
 body #page1 #blocp1 div h2 {
   color: white;
   font-family: "Playfair Display", serif;
-  font-size: 4em;
+  font-size: 3.8em;
   font-weight: 900;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page1 #blocp1 div h2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page1 #blocp1 div h2 {
+    font-size: 3em;
+  }
 }
 body #page1 #blocp1 div a {
   background-color: white;
   font-size: 21px;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  padding-inline: 47px;
+  padding-inline: 30px;
   padding-block: 20px;
   text-decoration: none;
   color: #4BA87D;
+  white-space: nowrap;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page1 #blocp1 div a {
+    font-size: 1em;
+    padding-block: 12px;
+  }
 }
 body #page2 {
   height: 100vh;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page2 {
+    height: 70vh;
+  }
 }
 body #page2 #blocp2 {
   width: 80%;
@@ -318,18 +466,28 @@ body #page2 #blocp2 {
   display: flex;
   justify-content: space-between;
 }
-body #page2 #blocp2 #sblocp21 {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page2 #blocp2 {
+    width: 90%;
+  }
+}
+body #page2 #blocp2 .sblocp2 {
   width: 30%;
   height: 100%;
   position: relative;
 }
-body #page2 #blocp2 #sblocp21 #imgp21 img {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page2 #blocp2 .sblocp2 {
+    height: 75%;
+  }
+}
+body #page2 #blocp2 .sblocp2 .imgp2 img {
   max-width: 100%;
   min-width: 100%;
   max-height: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 15px 0px;
 }
-body #page2 #blocp2 #sblocp21 #carte1 {
+body #page2 #blocp2 .sblocp2 .carte {
   position: absolute;
   bottom: -20px;
   background-color: white;
@@ -339,63 +497,39 @@ body #page2 #blocp2 #sblocp21 #carte1 {
   flex-direction: column;
   justify-content: center;
 }
-body #page2 #blocp2 #sblocp21 #carte1 div {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page2 #blocp2 .sblocp2 .carte {
+    height: 70%;
+    bottom: -75px;
+    bottom: -120px;
+  }
+}
+body #page2 #blocp2 .sblocp2 .carte div {
   width: 90%;
   margin: auto;
 }
-body #page2 #blocp2 #sblocp21 #carte1 div a {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page2 #blocp2 .sblocp2 .carte div {
+    width: 80%;
+  }
+}
+body #page2 #blocp2 .sblocp2 .carte div a {
   text-decoration: none;
   color: #4BA87D;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 1.2em;
 }
-body #page2 #blocp2 #sblocp21 #carte1 div p {
+body #page2 #blocp2 .sblocp2 .carte div p {
   font-family: "Raleway", sans-serif;
   font-size: 1.4em;
   line-height: 1.625em;
   font-weight: 500;
 }
-body #page2 #blocp2 #sblocp22 {
-  width: 30%;
-  height: 100%;
-  position: relative;
-}
-body #page2 #blocp2 #sblocp22 #imgp22 {
-  width: 100%;
-}
-body #page2 #blocp2 #sblocp22 #imgp22 img {
-  max-width: 100%;
-  min-width: 100%;
-  max-height: 100%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 15px 0px;
-}
-body #page2 #blocp2 #sblocp22 #carte2 {
-  position: absolute;
-  bottom: -20px;
-  background-color: white;
-  height: 45%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-body #page2 #blocp2 #sblocp22 #carte2 div {
-  width: 90%;
-  margin: auto;
-}
-body #page2 #blocp2 #sblocp22 #carte2 div a {
-  text-decoration: none;
-  color: #4BA87D;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 1.2em;
-}
-body #page2 #blocp2 #sblocp22 #carte2 div p {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.4em;
-  line-height: 1.625em;
-  font-weight: 500;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page2 #blocp2 .sblocp2 .carte div p {
+    font-size: 1em;
+  }
 }
 body #page2 #blocp2 article {
   width: 30%;
@@ -405,15 +539,46 @@ body #page2 #blocp2 article h2 {
   font-size: 3em;
   font-weight: 900;
   line-height: 48px;
+  margin-top: 18px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page2 #blocp2 article h2 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page2 #blocp2 article h2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page2 #blocp2 article h2 {
+    line-height: 31px;
+  }
 }
 body #page2 #blocp2 article p {
   font-family: "Raleway", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.6em;
   line-height: 1.625em;
   font-weight: 500;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page2 #blocp2 article p {
+    font-size: 1em;
+  }
+}
 body #page3 {
   height: 120vh;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page3 {
+    height: 100vh;
+  }
 }
 body #page3 #blocp3 {
   width: 80%;
@@ -422,6 +587,11 @@ body #page3 #blocp3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 {
+    width: 90%;
+  }
 }
 body #page3 #blocp3 #sblocimg {
   display: flex;
@@ -443,6 +613,16 @@ body #page3 #blocp3 #sblocimg .imgcont div {
   bottom: 30%;
   left: 10%;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocimg .imgcont div {
+    bottom: 14%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page3 #blocp3 #sblocimg .imgcont div {
+    bottom: 10%;
+  }
+}
 body #page3 #blocp3 #sblocimg .imgcont div h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
@@ -450,16 +630,41 @@ body #page3 #blocp3 #sblocimg .imgcont div h5 {
   color: white;
   margin-bottom: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocimg .imgcont div h5 {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page3 #blocp3 #sblocimg .imgcont div h5 {
+    font-size: 1.6em;
+  }
+}
 body #page3 #blocp3 #sblocimg .imgcont div span {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: white;
   font-size: 1.188em;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocimg .imgcont div span {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page3 #blocp3 #sblocimg .imgcont div span {
+    font-size: 1em;
+  }
+}
 body #page3 #blocp3 #sblocp31 {
   width: 60%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocp31 {
+    width: 60%;
+  }
 }
 body #page3 #blocp3 #sblocp31 h2 {
   font-family: "Playfair Display", serif;
@@ -467,31 +672,63 @@ body #page3 #blocp3 #sblocp31 h2 {
   font-weight: 900;
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocp31 h2 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page3 #blocp3 #sblocp31 h2 {
+    font-size: 2.5em;
+  }
+}
 body #page3 #blocp3 #sblocp31 div {
+  width: 75%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocp31 div {
+    width: 90%;
+    height: 80%;
+  }
 }
 body #page3 #blocp3 #sblocp31 div input {
   width: 60%;
   vertical-align: middle;
   margin: 0px 16px 0px 0;
-  padding: 20px;
+  padding: 16px;
   background-color: #fff;
-  border: 0.5px solid #ddd;
+  border: 1px solid #ddd;
+  border-color: #9F9F9F;
   border-radius: 5px;
   font-size: 1.8em;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocp31 div input {
+    font-size: 1em;
+    padding: 12px;
+  }
 }
 body #page3 #blocp3 #sblocp31 div button {
   background-color: #4BA87D;
   font-size: 21px;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  padding-inline: 47px;
+  padding-inline: 30px;
   padding-block: 20px;
   text-decoration: none;
   color: white;
+  white-space: nowrap;
   border: none;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocp31 div button {
+    font-size: 1em;
+    padding-block: 12px;
+  }
 }
 body #page3 #blocp3 #sblocp31 span {
   color: #4BA87D;
@@ -499,6 +736,11 @@ body #page3 #blocp3 #sblocp31 span {
   font-family: "Raleway", sans-serif;
   margin-top: 20px;
   margin-left: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocp31 span {
+    font-size: 0.875em;
+  }
 }
 body #page3 #blocp3 #sblocp32 {
   width: 80%;
@@ -511,6 +753,16 @@ body #page3 #blocp3 #sblocp32 h2 {
   font-weight: 900;
   text-align: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocp32 h2 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page3 #blocp3 #sblocp32 h2 {
+    font-size: 2.5em;
+  }
 }
 body #page3 #blocp3 #sblocp32 #sbloclogos {
   display: flex;
@@ -531,19 +783,36 @@ body #page4 div {
 body #page4 div h2 {
   color: white;
   font-family: "Playfair Display", serif;
-  font-size: 4em;
+  font-size: 3.8em;
   font-weight: 900;
   margin-top: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page4 div h2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body #page4 div h2 {
+    font-size: 3em;
+  }
 }
 body #page4 div a {
   background-color: white;
   font-size: 21px;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  padding-inline: 47px;
+  padding-inline: 30px;
   padding-block: 20px;
   text-decoration: none;
   color: #4BA87D;
+  white-space: nowrap;
   width: 30%;
   margin: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body #page4 div a {
+    font-size: 1em;
+    padding-block: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
