@@ -8,7 +8,16 @@
     text-decoration: none;
     color: $color;
     white-space: nowrap;
-    @media screen and (min-width: 768px) and (max-width: 991px){
+    @media (max-width: 575px) {
+        text-align: center;
+        padding-inline: 28px;
+    }
+    @media (min-width: 576px) and (max-width: 767px){
+        text-align: center;
+        font-size: xx-large;
+        padding-block: 30px;
+    }
+    @media (min-width: 768px) and (max-width: 991px){
         font-size: 1em;
         padding-block: 12px;
     }
@@ -19,10 +28,17 @@
     font-family: $play;
     font-size: 3.8em;
     font-weight: 900;
-    @media screen and (min-width: 768px) and (max-width: 991px){
+    @media (max-width: 575px) {
+        font-size: 2.8em;
+    }
+    @media (min-width: 576px) and (max-width: 767px){
+        font-size: 5.5em;
+        line-height: 90px;
+    }
+    @media (min-width: 768px) and (max-width: 991px){
         font-size: 2.5em;
     }
-    @media screen and (min-width: 992px) and (max-width: 1199px){
+    @media (min-width: 992px) and (max-width: 1199px){
         font-size: 3em;
     }
 }
@@ -31,10 +47,10 @@
     font-family: $play;
     font-size: 3em;
     font-weight: 900;
-    @media screen and (min-width: 768px) and (max-width: 991px){
+    @media (min-width: 768px) and (max-width: 991px){
         font-size: 1.8em;
     }
-    @media screen and (min-width: 992px) and (max-width: 1199px){
+    @media (min-width: 992px) and (max-width: 1199px){
         font-size: 2.5em;
     }
 }
@@ -45,7 +61,7 @@
     font-size: $fs;
     line-height: 1.625em;
     font-weight: 500;
-    @media screen and (min-width: 768px) and (max-width: 991px){
+    @media (min-width: 768px) and (max-width: 991px){
         font-size: 1em;
     }
 }

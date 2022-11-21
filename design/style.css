@@ -1,15 +1,16 @@
 header {
-  height: 15vh;
+  height: 30vh;
+}
+@media (max-width: 575px) {
+  header {
+    height: 35vh;
+  }
 }
 header #mobheader {
   width: 100%;
+  height: 80%;
   display: flex;
   align-items: center;
-  /* Style the navigation menu */
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  /* Style navigation menu links */
-  /* Style the hamburger menu */
-  /* Add a grey background color on mouse-over */
 }
 @media (min-width: 768px) {
   header #mobheader {
@@ -24,35 +25,8 @@ header #mobheader .topnav {
   height: 100%;
   align-items: center;
 }
-header #mobheader .topnav #myLinks a {
-  font-family: "Raleway", sans-serif;
-}
-header #mobheader .topnav div {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-header #mobheader .topnav div img {
-  width: 5em;
-  height: 2.6em;
-}
-header #mobheader .topnav div h1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-}
-header #mobheader .topnav div #sign {
-  background-color: #4BA87D;
-  font-family: "Raleway";
-  font-weight: 800;
-  color: white;
-  padding-inline: 0.813em;
-  padding-block: 0.375em;
-  margin-left: 2.375em;
-}
-header #mobheader .topnav #myLinks {
-  display: none;
-  background-color: #4BA87D;
+header #mobheader .topnav a:hover {
+  color: black;
 }
 header #mobheader .topnav a {
   color: rgb(0, 0, 0);
@@ -66,10 +40,78 @@ header #mobheader .topnav a {
 header #mobheader .topnav a.icon {
   display: block;
   position: absolute;
-  top: 35px;
+  top: 95px;
+  left: 8%;
 }
-header #mobheader .topnav a:hover {
-  color: black;
+@media (max-width: 575px) {
+  header #mobheader .topnav a.icon {
+    top: 66px;
+  }
+}
+header #mobheader .topnav .fa {
+  font-size: xx-large;
+}
+header #mobheader .topnav #myLinks {
+  display: none;
+  background-color: #4BA87D;
+}
+header #mobheader .topnav #myLinks a {
+  font-family: "Raleway", sans-serif;
+  font-size: xx-large;
+}
+@media (max-width: 575px) {
+  header #mobheader .topnav #myLinks a {
+    font-size: large;
+  }
+}
+header #mobheader .topnav #mainnav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  header #mobheader .topnav #mainnav {
+    margin-bottom: 30px;
+  }
+}
+header #mobheader .topnav #mainnav div {
+  height: 100%;
+}
+@media (max-width: 575px) {
+  header #mobheader .topnav #mainnav div {
+    width: 30%;
+  }
+}
+header #mobheader .topnav #mainnav div img {
+  max-width: 130%;
+  min-width: 130%;
+  max-height: 130%;
+}
+header #mobheader .topnav #mainnav h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+}
+@media (max-width: 575px) {
+  header #mobheader .topnav #mainnav h1 {
+    font-size: 1.6em;
+  }
+}
+header #mobheader .topnav #mainnav #sign {
+  background-color: #4BA87D;
+  font-family: "Raleway";
+  font-weight: 800;
+  color: white;
+  padding-inline: 0.813em;
+  padding-block: 0.375em;
+  margin-left: 2.375em;
+  font-size: 1.8em;
+  white-space: nowrap;
+}
+@media (max-width: 575px) {
+  header #mobheader .topnav #mainnav #sign {
+    font-size: 1em;
+  }
 }
 header #lheader {
   width: 85%;
@@ -79,12 +121,12 @@ header #lheader {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   header #lheader {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   header #lheader {
     width: 100%;
   }
@@ -99,7 +141,7 @@ header #lheader div h1 {
   font-weight: 900;
   font-size: 2.6em;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   header #lheader div h1 {
     font-size: 1.5em;
   }
@@ -114,12 +156,12 @@ header #lheader nav {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   header #lheader nav {
     width: 75%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   header #lheader nav {
     justify-content: unset;
   }
@@ -130,7 +172,7 @@ header #lheader nav ul {
   list-style: none;
   justify-content: space-between;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   header #lheader nav ul {
     justify-content: space-around;
   }
@@ -144,7 +186,7 @@ header #lheader nav ul a {
   letter-spacing: 1.27px;
   position: relative;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   header #lheader nav ul a {
     font-size: 0.75em;
   }
@@ -175,7 +217,7 @@ header #lheader nav .btn {
   letter-spacing: 1.27px;
   white-space: nowrap;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   header #lheader nav .btn {
     font-size: 0.75em;
   }
@@ -187,6 +229,16 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 575px) {
+  footer {
+    height: 140vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  footer {
+    height: 120vh;
+  }
+}
 footer #blocf {
   width: 80%;
   height: 80%;
@@ -194,6 +246,12 @@ footer #blocf {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  footer #blocf {
+    height: 90%;
+    justify-content: space-around;
+  }
 }
 footer #blocf #sblocf1 {
   display: flex;
@@ -204,21 +262,49 @@ footer #blocf #sblocf1 {
   border-width: 2px;
   border-color: #DBDBDB;
 }
+@media (min-width: 360px) and (max-width: 767px) {
+  footer #blocf #sblocf1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 footer #blocf #sblocf1 #logo {
   display: flex;
   align-items: center;
   align-self: baseline;
   width: 40%;
 }
+@media (min-width: 360px) and (max-width: 767px) {
+  footer #blocf #sblocf1 #logo {
+    width: 100%;
+    justify-content: center;
+  }
+}
 footer #blocf #sblocf1 #logo span {
   font-size: 1.875em;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
 }
+@media (min-width: 360px) and (max-width: 767px) {
+  footer #blocf #sblocf1 #logo span {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer #blocf #sblocf1 #logo span {
+    font-size: 1.5em;
+  }
+}
 footer #blocf #sblocf1 #linklist {
   display: flex;
   width: 60%;
   justify-content: space-between;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  footer #blocf #sblocf1 #linklist {
+    flex-direction: column;
+  }
 }
 footer #blocf #sblocf1 #linklist ul {
   list-style: none;
@@ -233,16 +319,53 @@ footer #blocf #sblocf1 #linklist ul li a {
   font-size: 1.2em;
   color: black;
 }
+@media (min-width: 360px) and (max-width: 767px) {
+  footer #blocf #sblocf1 #linklist ul li a {
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer #blocf #sblocf1 #linklist ul li a {
+    font-size: 1em;
+  }
+}
 footer #blocf #sblocf2 {
   display: flex;
   justify-content: space-around;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  footer #blocf #sblocf2 {
+    flex-direction: column;
+    text-align: center;
+    height: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer #blocf #sblocf2 {
+    padding-bottom: 25px;
+  }
 }
 footer #blocf #sblocf2 * {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
+@media (min-width: 360px) and (max-width: 767px) {
+  footer #blocf #sblocf2 * {
+    font-size: 1em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer #blocf #sblocf2 * {
+    font-size: 0.7em;
+  }
+}
 footer #blocf #sblocf2 span {
   width: 60%;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  footer #blocf #sblocf2 span {
+    width: 100%;
+  }
 }
 footer #blocf #sblocf2 a {
   text-decoration: none;
@@ -255,6 +378,16 @@ body #hero {
   align-items: center;
   position: relative;
 }
+@media (max-width: 575px) {
+  body #hero {
+    height: 70vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #hero {
+    height: 100vh;
+  }
+}
 body #hero #blochero {
   display: flex;
   width: 75%;
@@ -262,7 +395,17 @@ body #hero #blochero {
   margin: auto;
   justify-content: flex-end;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #hero #blochero {
+    margin-block: 0;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  body #hero #blochero {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #hero #blochero {
     width: 90%;
   }
@@ -271,9 +414,16 @@ body #hero #blochero article {
   position: absolute;
   top: 16%;
   right: 51%;
-  width: 35%;
+  width: 36%;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #hero #blochero article {
+    width: 95%;
+    right: 4%;
+    top: 4%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #hero #blochero article {
     width: 40%;
     top: 12%;
@@ -287,12 +437,23 @@ body #hero #blochero article h2 {
   font-weight: 900;
   margin-block: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #hero #blochero article h2 {
+    font-size: 2.8em;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #hero #blochero article h2 {
+    font-size: 5.5em;
+    line-height: 90px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #hero #blochero article h2 {
     font-size: 2.5em;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #hero #blochero article h2 {
     font-size: 3em;
   }
@@ -303,16 +464,33 @@ body #hero #blochero article p {
   line-height: 1.625em;
   font-weight: 500;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   body #hero #blochero article p {
     font-size: 1em;
+  }
+}
+@media (max-width: 575px) {
+  body #hero #blochero article p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #hero #blochero article p {
+    font-size: 2em;
+    margin-block: 50px;
   }
 }
 body #hero #blochero article div {
   margin-top: 50px;
   display: flex;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #hero #blochero article div {
+    flex-direction: column;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #hero #blochero article div {
     margin-top: 40px;
   }
@@ -328,13 +506,26 @@ body #hero #blochero article div #trynow {
   color: white;
   white-space: nowrap;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #hero #blochero article div #trynow {
+    text-align: center;
+    padding-inline: 28px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #hero #blochero article div #trynow {
+    text-align: center;
+    font-size: xx-large;
+    padding-block: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #hero #blochero article div #trynow {
     font-size: 1em;
     padding-block: 12px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   body #hero #blochero article div #trynow {
     padding-inline: 35px;
   }
@@ -352,13 +543,31 @@ body #hero #blochero article div #getademo {
   margin-left: 45px;
   box-shadow: inset 0 0 0 3px #4BA87D;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #hero #blochero article div #getademo {
+    text-align: center;
+    padding-inline: 28px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #hero #blochero article div #getademo {
+    text-align: center;
+    font-size: xx-large;
+    padding-block: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #hero #blochero article div #getademo {
     font-size: 1em;
     padding-block: 12px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #hero #blochero article div #getademo {
+    margin-left: initial;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #hero #blochero article div #getademo {
     padding-inline: 28px;
     margin-left: 35px;
@@ -367,7 +576,12 @@ body #hero #blochero article div #getademo {
 body #hero #blochero div {
   width: 70%;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #hero #blochero div {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #hero #blochero div {
     width: 68%;
   }
@@ -381,14 +595,24 @@ body #hero #blochero div img {
 body #page1 {
   height: 90vh;
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 575px) {
   body #page1 {
-    height: 80vh;
+    height: 50vh;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page1 {
+    height: 60vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page1 {
     height: 70vh;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body #page1 {
+    height: 80vh;
   }
 }
 body #page1 #blocp1 {
@@ -402,12 +626,24 @@ body #page1 #blocp1 {
   display: flex;
   text-align: center;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #page1 #blocp1 {
+    height: 70%;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page1 #blocp1 {
+    width: 100%;
+    height: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page1 #blocp1 {
     width: 90%;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page1 #blocp1 {
     width: 80%;
   }
@@ -423,14 +659,37 @@ body #page1 #blocp1 div h2 {
   font-weight: 900;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #page1 #blocp1 div h2 {
+    font-size: 2.8em;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page1 #blocp1 div h2 {
+    font-size: 5.5em;
+    line-height: 90px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page1 #blocp1 div h2 {
     font-size: 2.5em;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page1 #blocp1 div h2 {
     font-size: 3em;
+  }
+}
+@media (max-width: 575px) {
+  body #page1 #blocp1 div h2 {
+    font-size: 2em;
+    padding-bottom: initial;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page1 #blocp1 div h2 {
+    font-size: 3.4em;
+    padding-bottom: initial;
   }
 }
 body #page1 #blocp1 div a {
@@ -445,16 +704,45 @@ body #page1 #blocp1 div a {
   white-space: nowrap;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #page1 #blocp1 div a {
+    text-align: center;
+    padding-inline: 28px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page1 #blocp1 div a {
+    text-align: center;
+    font-size: xx-large;
+    padding-block: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page1 #blocp1 div a {
     font-size: 1em;
     padding-block: 12px;
   }
 }
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page1 #blocp1 div a {
+    padding-block: 20px;
+    font-size: 21px;
+  }
+}
 body #page2 {
   height: 100vh;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #page2 {
+    height: 220vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page2 {
+    height: 280vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page2 {
     height: 70vh;
   }
@@ -466,7 +754,14 @@ body #page2 #blocp2 {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page2 #blocp2 {
+    flex-direction: column;
+    width: 70%;
+    height: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page2 #blocp2 {
     width: 90%;
   }
@@ -476,7 +771,12 @@ body #page2 #blocp2 .sblocp2 {
   height: 100%;
   position: relative;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page2 #blocp2 .sblocp2 {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page2 #blocp2 .sblocp2 {
     height: 75%;
   }
@@ -497,7 +797,14 @@ body #page2 #blocp2 .sblocp2 .carte {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page2 #blocp2 .sblocp2 .carte {
+    height: 35%;
+    bottom: 150px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 15px 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page2 #blocp2 .sblocp2 .carte {
     height: 70%;
     bottom: -75px;
@@ -508,7 +815,12 @@ body #page2 #blocp2 .sblocp2 .carte div {
   width: 90%;
   margin: auto;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page2 #blocp2 .sblocp2 .carte div {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page2 #blocp2 .sblocp2 .carte div {
     width: 80%;
   }
@@ -520,19 +832,48 @@ body #page2 #blocp2 .sblocp2 .carte div a {
   font-weight: 800;
   font-size: 1.2em;
 }
+@media (max-width: 575px) {
+  body #page2 #blocp2 .sblocp2 .carte div a {
+    font-size: 1em;
+    margin-top: 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page2 #blocp2 .sblocp2 .carte div a {
+    font-size: 2em;
+  }
+}
 body #page2 #blocp2 .sblocp2 .carte div p {
   font-family: "Raleway", sans-serif;
   font-size: 1.4em;
   line-height: 1.625em;
   font-weight: 500;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   body #page2 #blocp2 .sblocp2 .carte div p {
     font-size: 1em;
   }
 }
+@media (max-width: 575px) {
+  body #page2 #blocp2 .sblocp2 .carte div p {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page2 #blocp2 .sblocp2 .carte div p {
+    font-size: 1.8em;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+}
 body #page2 #blocp2 article {
   width: 30%;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page2 #blocp2 article {
+    width: 100%;
+  }
 }
 body #page2 #blocp2 article h2 {
   font-family: "Playfair Display", serif;
@@ -541,17 +882,29 @@ body #page2 #blocp2 article h2 {
   line-height: 48px;
   margin-top: 18px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   body #page2 #blocp2 article h2 {
     font-size: 1.8em;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page2 #blocp2 article h2 {
     font-size: 2.5em;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #page2 #blocp2 article h2 {
+    font-size: 2em;
+    line-height: normal;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page2 #blocp2 article h2 {
+    line-height: 65px;
+    font-size: 3.8em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page2 #blocp2 article h2 {
     line-height: 31px;
   }
@@ -562,20 +915,41 @@ body #page2 #blocp2 article p {
   line-height: 1.625em;
   font-weight: 500;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   body #page2 #blocp2 article p {
     font-size: 1em;
+  }
+}
+@media (max-width: 575px) {
+  body #page2 #blocp2 article p {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page2 #blocp2 article p {
+    font-size: 2em;
+    line-height: normal;
   }
 }
 body #page3 {
   height: 120vh;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #page3 {
+    height: 300vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page3 {
+    height: 300vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 {
     height: 80vh;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page3 {
     height: 100vh;
   }
@@ -588,7 +962,17 @@ body #page3 #blocp3 {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page3 #blocp3 {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page3 #blocp3 {
     width: 90%;
   }
@@ -597,11 +981,47 @@ body #page3 #blocp3 #sblocimg {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 45%;
+  height: 35%;
+}
+@media (max-width: 575px) {
+  body #page3 #blocp3 #sblocimg {
+    width: 90%;
+    height: 35%;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-block: 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocimg {
+    width: 90%;
+    height: 50%;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+    margin-block: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocimg {
+    height: 30%;
+  }
 }
 body #page3 #blocp3 #sblocimg .imgcont {
   position: relative;
   width: 30%;
+}
+@media (max-width: 575px) {
+  body #page3 #blocp3 #sblocimg .imgcont {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocimg .imgcont {
+    width: 100%;
+    height: 30%;
+  }
 }
 body #page3 #blocp3 #sblocimg .imgcont img {
   max-width: 100%;
@@ -613,14 +1033,14 @@ body #page3 #blocp3 #sblocimg .imgcont div {
   bottom: 30%;
   left: 10%;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 #blocp3 #sblocimg .imgcont div {
-    bottom: 14%;
+    bottom: 42%;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page3 #blocp3 #sblocimg .imgcont div {
-    bottom: 10%;
+    bottom: 50%;
   }
 }
 body #page3 #blocp3 #sblocimg .imgcont div h5 {
@@ -630,12 +1050,12 @@ body #page3 #blocp3 #sblocimg .imgcont div h5 {
   color: white;
   margin-bottom: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 #blocp3 #sblocimg .imgcont div h5 {
     font-size: 1.4em;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page3 #blocp3 #sblocimg .imgcont div h5 {
     font-size: 1.6em;
   }
@@ -646,22 +1066,32 @@ body #page3 #blocp3 #sblocimg .imgcont div span {
   color: white;
   font-size: 1.188em;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 #blocp3 #sblocimg .imgcont div span {
     font-size: 0.8em;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page3 #blocp3 #sblocimg .imgcont div span {
     font-size: 1em;
   }
 }
 body #page3 #blocp3 #sblocp31 {
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #page3 #blocp3 #sblocp31 {
+    height: 30%;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp31 {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 #blocp3 #sblocp31 {
     width: 60%;
   }
@@ -672,14 +1102,24 @@ body #page3 #blocp3 #sblocp31 h2 {
   font-weight: 900;
   text-align: center;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 #blocp3 #sblocp31 h2 {
     font-size: 1.8em;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page3 #blocp3 #sblocp31 h2 {
     font-size: 2.5em;
+  }
+}
+@media (max-width: 575px) {
+  body #page3 #blocp3 #sblocp31 h2 {
+    font-size: 2.2em;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp31 h2 {
+    font-size: 3.8em;
   }
 }
 body #page3 #blocp3 #sblocp31 div {
@@ -689,7 +1129,13 @@ body #page3 #blocp3 #sblocp31 div {
   margin: auto;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp31 div {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 #blocp3 #sblocp31 div {
     width: 90%;
     height: 80%;
@@ -706,7 +1152,14 @@ body #page3 #blocp3 #sblocp31 div input {
   border-radius: 5px;
   font-size: 1.8em;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp31 div input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 #blocp3 #sblocp31 div input {
     font-size: 1em;
     padding: 12px;
@@ -724,10 +1177,28 @@ body #page3 #blocp3 #sblocp31 div button {
   white-space: nowrap;
   border: none;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #page3 #blocp3 #sblocp31 div button {
+    text-align: center;
+    padding-inline: 28px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp31 div button {
+    text-align: center;
+    font-size: xx-large;
+    padding-block: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 #blocp3 #sblocp31 div button {
     font-size: 1em;
     padding-block: 12px;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp31 div button {
+    font-size: x-large;
   }
 }
 body #page3 #blocp3 #sblocp31 span {
@@ -735,9 +1206,16 @@ body #page3 #blocp3 #sblocp31 span {
   font-size: 1.6em;
   font-family: "Raleway", sans-serif;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 140px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp31 span {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 #blocp3 #sblocp31 span {
     font-size: 0.875em;
   }
@@ -747,6 +1225,29 @@ body #page3 #blocp3 #sblocp32 {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 575px) {
+  body #page3 #blocp3 #sblocp32 {
+    height: 30%;
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp32 {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body #page3 #blocp3 #sblocp32 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body #page3 #blocp3 #sblocp32 {
+    width: 90%;
+  }
+}
 body #page3 #blocp3 #sblocp32 h2 {
   font-family: "Playfair Display", serif;
   font-size: 3em;
@@ -754,19 +1255,79 @@ body #page3 #blocp3 #sblocp32 h2 {
   text-align: center;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   body #page3 #blocp3 #sblocp32 h2 {
     font-size: 1.8em;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page3 #blocp3 #sblocp32 h2 {
     font-size: 2.5em;
+  }
+}
+@media (max-width: 575px) {
+  body #page3 #blocp3 #sblocp32 h2 {
+    font-size: 2.2em;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp32 h2 {
+    font-size: 3.8em;
   }
 }
 body #page3 #blocp3 #sblocp32 #sbloclogos {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 575px) {
+  body #page3 #blocp3 #sblocp32 #sbloclogos {
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp32 #sbloclogos {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp32 #sbloclogos div {
+    width: 50%;
+    align-items: center;
+  }
+}
+@media (max-width: 575px) {
+  body #page3 #blocp3 #sblocp32 #sbloclogos div #dragon, body #page3 #blocp3 #sblocp32 #sbloclogos div #radio {
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp32 #sbloclogos div #dragon, body #page3 #blocp3 #sblocp32 #sbloclogos div #radio {
+    margin-left: 120px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 575px) {
+  body #page3 #blocp3 #sblocp32 #sbloclogos div #game {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp32 #sbloclogos div #game {
+    margin-left: 60px;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page3 #blocp3 #sblocp32 #sbloclogos div img {
+    max-width: 100%;
+    max-height: 120%;
+  }
 }
 body #page4 {
   height: 45vh;
@@ -775,10 +1336,20 @@ body #page4 {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page4 {
+    height: 60vh;
+  }
+}
 body #page4 div {
   margin: auto;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  body #page4 div {
+    width: 80%;
+  }
 }
 body #page4 div h2 {
   color: white;
@@ -787,12 +1358,23 @@ body #page4 div h2 {
   font-weight: 900;
   margin-top: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #page4 div h2 {
+    font-size: 2.8em;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page4 div h2 {
+    font-size: 5.5em;
+    line-height: 90px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page4 div h2 {
     font-size: 2.5em;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body #page4 div h2 {
     font-size: 3em;
   }
@@ -810,9 +1392,33 @@ body #page4 div a {
   width: 30%;
   margin: auto;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px) {
+  body #page4 div a {
+    text-align: center;
+    padding-inline: 28px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page4 div a {
+    text-align: center;
+    font-size: xx-large;
+    padding-block: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   body #page4 div a {
     font-size: 1em;
     padding-block: 12px;
+  }
+}
+@media (max-width: 575px) {
+  body #page4 div a {
+    padding-inline: 50px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body #page4 div a {
+    padding-block: 20px;
+    font-size: 21px;
   }
 }/*# sourceMappingURL=style.css.map */

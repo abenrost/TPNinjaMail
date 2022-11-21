@@ -1,22 +1,22 @@
 
 header {
 
-    height: 15vh;
-   
-       
+    height: 30vh;
+    @media (max-width: 575px) {
+        height: 35vh;
+    }
     
     #mobheader {
 
         width: 100%;
+        height: 80%;
         display: flex;
         align-items: center;
 
-        @media(min-width:768px){
+        @media (min-width:768px){
                 display: none;
             }
        
-        
-                /* Style the navigation menu */
         .topnav {
             overflow: hidden;
             background-color: white;
@@ -25,23 +25,71 @@ header {
             height: 100%;
             align-items: center;
 
-            #myLinks a {
-                font-family: $raleway;    
+            a:hover {
+           
+                color: black;
             }
 
-            div {
+            a {
+                color: rgb(0, 0, 0);
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: $raleway;
+                font-weight: 800;
+                display: inline-block;
+            }
+
+            a.icon {
+                display: block;
+                position: absolute;
+                top: 95px;
+                left: 8%;
+                @media (max-width: 575px) {
+                    top: 66px;
+                }
+            }
+
+            .fa {
+                font-size: xx-large;
+            }
+            #myLinks {
+                display: none;
+                background-color: $primcolor;
+                a {
+                    font-family: $raleway;
+                    font-size: xx-large; 
+                    @media (max-width: 575px) {
+                        font-size: large;
+                }   
+                }
+            }
+            #mainnav {
                 width: 100%;
                 display: flex;
-                justify-content: space-around;
                 align-items: center;
+                @media (max-width: 575px) {
+                    margin-bottom: 30px;
+                }
+                div {
+                    height: 100%;
+                    @media (max-width: 575px) {
+                        width: 30%;
+                    }
+                    img {
+                        max-width: 130%;
+                        min-width: 130%;
+                        max-height: 130%;
+                    }
                 
-                img {
-                    width: 5em;
-                    height: 2.6em;
                 }
                 h1 {
                     font-family: $raleway;
                     font-weight: 900;
+                    font-size: 3em;
+                    @media (max-width: 575px) {
+                        font-size: 1.6em;
+                    }
                 }
                 #sign {
                     background-color: $primcolor;
@@ -51,39 +99,14 @@ header {
                     padding-inline: 0.813em;
                     padding-block: 0.375em;
                     margin-left: 2.375em;
+                    font-size: 1.8em;
+                    white-space: nowrap;
+                    @media (max-width: 575px) {
+                        font-size: 1em;
+                    }
                 } 
             }
             
-        }
-        
-        /* Hide the links inside the navigation menu (except for logo/home) */
-        .topnav #myLinks {
-            display: none;
-            background-color: $primcolor;
-        }
-        
-        /* Style navigation menu links */
-        .topnav a {
-            color: rgb(0, 0, 0);
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            font-family: $raleway;
-            font-weight: 800;
-            display:inline-block;
-        }
-        
-        /* Style the hamburger menu */
-        .topnav a.icon {
-            display: block;
-            position: absolute;
-            top: 35px;
-        }
-        
-        /* Add a grey background color on mouse-over */
-        .topnav a:hover {
-           
-            color: black;
         }
         
     }
@@ -96,10 +119,10 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        @media screen and (max-width: 767px) {
+        @media (max-width: 767px) {
             display: none;
         }
-        @media screen and (min-width: 768px) and (max-width: 1199px){
+        @media (min-width: 768px) and (max-width: 1199px){
             width: 100%;
         }
 
@@ -111,7 +134,7 @@ header {
                 font-family: $raleway;
                 font-weight: 900;
                 font-size: 2.6em;
-                @media screen and (min-width: 768px) and (max-width: 991px){
+                @media (min-width: 768px) and (max-width: 991px){
                     font-size: 1.5em;
                 }
             }
@@ -127,10 +150,10 @@ header {
             align-items: center;
             justify-content: space-between;
 
-            @media screen and (min-width: 768px) and (max-width: 1199px){
+            @media (min-width: 768px) and (max-width: 1199px){
                 width: 75%;
             }
-            @media screen and (min-width: 768px) and (max-width: 991px){
+            @media (min-width: 768px) and (max-width: 991px){
                 justify-content: unset;
             }
 
@@ -139,7 +162,7 @@ header {
                 display: flex;
                 list-style: none;
                 justify-content: space-between;
-                @media screen and (min-width: 768px) and (max-width: 991px){
+                @media (min-width: 768px) and (max-width: 991px){
                     justify-content: space-around;
                 }
                 a {
@@ -150,7 +173,7 @@ header {
                     font-size: 1em;
                     letter-spacing: 1.27px;
                     position: relative;
-                    @media screen and (min-width: 768px) and (max-width: 991px){
+                    @media (min-width: 768px) and (max-width: 991px){
                         font-size: 0.75em;
                     }
                 }       
@@ -182,7 +205,7 @@ header {
                 padding-block: 11px;
                 letter-spacing: 1.27px;
                 white-space: nowrap;
-                @media screen and (min-width: 768px) and (max-width: 991px){
+                @media (min-width: 768px) and (max-width: 991px){
                     font-size: 0.75em;
                 }
 
