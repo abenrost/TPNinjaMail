@@ -1413,7 +1413,7 @@ body #page4 div a {
 }
 @media (max-width: 575px) {
   body #page4 div a {
-    padding-inline: 50px;
+    padding-right: 60px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
